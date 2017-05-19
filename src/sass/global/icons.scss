@@ -1,0 +1,27 @@
+.icon {
+	background: url(../img/ico_sprites@2x.png) no-repeat;
+	background-size: 171px 150px;
+	display: inline-block;
+	text-indent: -999em;
+
+	&--facebook{
+		width: 49px;
+		height: 49px;
+	}
+
+	&--twitter{
+		width: 59px;
+		height: 48px;
+		background-position: -64px -55px;
+	}
+
+	&--listen{
+		width: 38px;
+    	height: 33px;
+    	background-position: -133px -104px;
+	}
+
+	&:focus{
+		outline: none;
+	}
+}

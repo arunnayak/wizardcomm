@@ -1,0 +1,102 @@
+/******************************************************************
+
+Site Name: Wizard communications
+Author: Arun Nayak
+
+Stylesheet: Global Header Stylesheet
+
+******************************************************************/
+
+.header{
+		&__top{
+			padding: 0.5em 0.5em 1em 0.5em;
+			border-bottom: solid 1px $bordercolor;
+			font-size: 1.2em;
+
+			@media(min-width: 768px){
+				font-size: 1.4em;
+				padding: 10px;
+			}
+		}
+		
+		&__top-phone, &__top-email{
+			padding-top: 0.8em;
+		}
+
+		&__icon--color{
+			color: $lightblue;
+		}
+
+		&__social{
+			position: absolute;
+			right: 0.5em;
+			top: 1em;
+			@media(min-width: 768px){
+				float: right;
+				position: static;
+			}
+		}
+
+		&__social-list{
+			margin: 0;
+			padding:0;
+		}
+
+		&__social-item{
+			display: inline-block;
+			padding-left: 5px;
+		}
+
+		&__social-link{
+			
+		}
+
+		&__social-facebook, &__social-googleplus, &__social-twitter, &__social-linkden{
+			width: 2.5em;
+			height: 2.5em;
+		}
+		
+		&__bottom{
+			&--nav{
+				margin:0;
+			}
+			.navbar-toggle{
+				.icon-bar{
+					background: #000;
+				}
+			}
+
+		}
+
+		&__navbar-list{
+			padding: 2em 0;
+				.active{
+					.header__navbar-link{
+						color: $lightblue;
+						text-decoration: none;
+						background-color: transparent;
+						border-bottom: solid 4px $lightblue;
+					}
+			}
+
+			a:hover{
+				background: red;
+			}
+		}
+		&__navbar-item{
+			
+		}
+		&__navbar-link{
+			color:#404041;
+			font-size: 1.8em;
+			letter-spacing: 0.5px;
+			&:hover{
+				background-color: #fff;
+				color: $lightblue;
+				border-bottom: solid 4px $lightblue;
+				
+			}
+
+		}
+	
+}

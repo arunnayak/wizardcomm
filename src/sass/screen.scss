@@ -1,0 +1,17 @@
+// Main Styles File
+
+    // Utilities
+    @import "util/variables";
+    @import "util/mixins";
+    @import "util/normalise";
+    @import "util/fonts";
+    @import "util/base";
+    
+    // Global Styles
+    @import "global/icons";
+
+    // Module Styles
+ 	@import "modules/header";
+ 	@import "modules/footer";
+ 	@import "modules/hero";
+     
