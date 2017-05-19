@@ -1,18 +1,13 @@
-DAB Lander #1 - MyOMGRadio
+Wizard communications
 ======
 Built following the key requirement that this code will need to be reused for each DAB station landing page.
 
-Less stylesheet is component driven. 
+Scss stylesheet is component driven. 
 
-The goal for this project is when reusing this code base for another DAB lander, the dev will only need to:
-1. update the variables.less files to change image asset paths and brand-specific colours
-2. update HTML with relevant meta data, links and copy
+How to run on your local machine
+1. Fork or download(zip) the project.
+2. Goto the project root folder using command prompt and do NPM install
+3. type "gulp" when npm install successfull
 
+any questions, please write to me: nayakarun123@gmail.com 
 
-## Domains
-* UAT: http://myomgradio-uat.scalabs.io
-* Live: http://www.myomgradio.com.au
-
-## Contact
-* Ask Jon if you have any questions: 
-* jon.martin@sca.com.au
