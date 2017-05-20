@@ -1,6 +1,5 @@
 Wizard communications
 ======
-Built following the key requirement that this code will need to be reused for each DAB station landing page.
 
 Scss stylesheet is component driven. 
 
