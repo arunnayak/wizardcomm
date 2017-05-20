@@ -61,15 +61,33 @@ Stylesheet: Global Header Stylesheet
 				margin:0;
 			}
 			.navbar-toggle{
+				&:focus{
+					background-color: $lightblue;
+					.icon-bar{
+						background: #fff;
+					}
+				}
 				.icon-bar{
 					background: #000;
+					transition: background-color 0.5s ease;
 				}
 			}
 
 		}
 
+		&__navbar{
+			padding: 0;
+		}
+
 		&__navbar-list{
-			padding: 2em 0;
+			padding: 0;
+			margin: 0;
+
+
+			@media(min-width: 768px){
+				padding: 2em 0;
+				float: right;
+			}
 				.active{
 					.header__navbar-link{
 						color: $lightblue;
