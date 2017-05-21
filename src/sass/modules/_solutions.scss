@@ -1,0 +1,11 @@
+.solutions{
+    &__list{}
+    &__item{
+        display: inline-block;
+    }
+    &__link{
+        width: 4.5em;
+        height: 4.5em;
+        display: block;
+    }
+}
