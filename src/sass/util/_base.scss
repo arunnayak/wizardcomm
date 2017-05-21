@@ -28,6 +28,12 @@ body {
 	font-family: $fontFamily;
 	position: relative;
 	min-height: 100vh;
+
+	.container{
+		@media (max-width: 768px){
+			width: auto;
+		}
+	}
 }
 
 p {
