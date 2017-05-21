@@ -66,4 +66,8 @@ gulp.task('watch', function () {
       livereload: true,
       port: 9001
     });
+
+
 });
+
+gulp.task('default', ['watch']);
