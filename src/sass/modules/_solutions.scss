@@ -1,11 +1,26 @@
 .solutions{
     &__list{}
     &__item{
-        display: inline-block;
+        float: left;
+        padding: 0 3.5%;
+        margin-bottom: 1em;
+        
+        @media(min-width: 768px){
+            padding: 0 3.6%;
+        }
+
+        &:last-child{
+            padding-right: 0;
+            .solutions__link{
+                margin-right: 0;
+            }
+        }
     }
     &__link{
-        width: 4.5em;
-        height: 4.5em;
+        width: 12em;
+        height: 12em;
         display: block;
+        @include border-radius(10em 10em 10em 10em);
+        border: solid 2px $lightblue;
     }
 }
