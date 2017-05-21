@@ -1,4 +1,50 @@
 .hero{
     background: #00a0bc;
     min-height: 300px;
+
+    &__image{
+        width: 100%;
+        @media(min-width: 768px){
+            float: left;
+            width: 50%; 
+        }
+    }
+    &__description{
+        color: #fff;
+        display: block;
+        @media(min-width: 768px){
+            padding-top: 8%;
+        }
+    }
+    &__title{
+        text-align: left;
+        margin: 0;
+        font-weight: normal;
+        font-size: 3em;
+        padding: 0.5em;
+        @media(min-width: 768px){
+            font-size: 7em;
+        }
+        &--style{
+            font-weight: 900;
+        }
+    }
+    &__text{
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0 1em;
+        @media(min-width: 768px){
+            padding: 0.5em 0;
+        }        
+    }
+
+   &__controls{
+       padding: 1em 0 0;
+        &:after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+   }
+
 }

@@ -187,3 +187,7 @@ OPACITY
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+@mixin bgTransitionEase($value){
+    transition: background-color $value ease;
+}

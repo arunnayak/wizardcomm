@@ -1,0 +1,35 @@
+.button{
+    color: #fff;
+    padding: 1em 2em;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    @include border-radius(2em 2em 2em 2em);
+    @include bgTransitionEase(0.5s);
+    margin-right: 1em;
+    display: inline-block;
+    margin: 1em 0;
+    &:hover{
+        text-decoration: none;
+        color: #000;
+        background: #fff;
+
+    }
+
+    &__primary{
+        background: #003c4d;
+    }
+
+    &__white{
+        background: #fff;
+        color: #000;
+         &:hover{
+            color: #fff;
+            background: #003c4d;
+            
+         }
+    }
+
+    &__lightblue{
+        background: $lightblue;
+    }
+}

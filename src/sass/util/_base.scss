@@ -30,8 +30,14 @@ body {
 	min-height: 100vh;
 
 	.container{
-		@media (max-width: 768px){
+		@media (min-width: 767px){
 			width: auto;
+		}
+		@media (min-width: 992px){
+			width: 970px;
+		}
+		@media (min-width: 1200px){
+			width: 1170px;
 		}
 	}
 }
