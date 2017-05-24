@@ -2,25 +2,32 @@
     &__list{}
     &__item{
         float: left;
-        padding: 0 3.5%;
-        margin-bottom: 1em;
-        
+        margin: 0 0 5% 0%;
+        text-align: center;
+        width: 50%;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
         @media(min-width: 768px){
-            padding: 0 3.6%;
+            width: calc(20% - 6em);
+            margin-right: 6em;
+            &:nth-child(2n){
+                margin-right: 6em;
+            }
         }
 
         &:last-child{
-            padding-right: 0;
-            .solutions__link{
-                margin-right: 0;
-            }
+            margin-right: 0;
+        }
+
+        &:hover{
+            cursor: pointer;
         }
     }
     &__link{
-        width: 12em;
-        height: 12em;
+        width: 100%;
         display: block;
-        @include border-radius(10em 10em 10em 10em);
-        border: solid 2px $lightblue;
+        
+        
     }
 }
